@@ -538,12 +538,12 @@ begin
 	ArqINI.Free;
 
   try
-    Connection_1.Params.Values['DriveID' ] := 'MySQL';
-    Connection_1.Params.Values['Server'  ] := FServer;
-    Connection_1.Params.Values['Database'] := FDatabase;
-    Connection_1.Params.Values['Port'    ] := '3306';
-    Connection_1.Params.Values['Username'] := 'root';
-    Connection_1.Params.Values['Password'] := '';
+    Connection_1.Params.Values['DriverID' ] := 'MySQL';
+    Connection_1.Params.Values['Server'   ] := FServer;
+    Connection_1.Params.Values['Database' ] := FDatabase;
+    Connection_1.Params.Values['Port'     ] := '3306';
+    Connection_1.Params.Values['User_Name'] := FUser;
+    Connection_1.Params.Values['Password' ] := FPassword;
   except
     ShowMessage('Erro ao conectar o banco de dados!');
   end;

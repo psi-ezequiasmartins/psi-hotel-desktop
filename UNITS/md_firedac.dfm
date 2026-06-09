@@ -1,10 +1,8 @@
 object dm_firedac: Tdm_firedac
-  OldCreateOrder = False
   OnCreate = DataModuleCreate
   Height = 444
   Width = 680
   object query_login: TFDQuery
-    Active = True
     Connection = Connection_1
     SQL.Strings = (
       
@@ -29,7 +27,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object query_loginID: TStringField
       FieldName = 'ID'
@@ -71,7 +68,6 @@ object dm_firedac: Tdm_firedac
     Top = 16
   end
   object q_empresa: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -85,7 +81,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_empresaEMPRESA: TStringField
       FieldName = 'EMPRESA'
@@ -339,7 +334,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_feriados: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -353,7 +347,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_feriadosDT_EVENTO: TDateField
       FieldName = 'DT_EVENTO'
@@ -379,7 +372,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_apartamentos: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -393,7 +385,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_apartamentosAPTO: TStringField
       FieldName = 'APTO'
@@ -493,7 +484,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_fornecedores: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -507,7 +497,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_fornecedoresID_FORNEC: TStringField
       FieldName = 'ID_FORNEC'
@@ -595,7 +584,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_grupos: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -609,7 +597,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_gruposID_GRUPO: TStringField
       FieldName = 'ID_GRUPO'
@@ -631,7 +618,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_produtos: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -645,7 +631,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_produtosID_GRUPO: TStringField
       FieldName = 'ID_GRUPO'
@@ -709,7 +694,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_estoque: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -723,7 +707,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_estoqueDH_LANCAMENTO: TDateTimeField
       FieldName = 'DH_LANCAMENTO'
@@ -782,7 +765,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_caixa: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -796,7 +778,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_caixaCAIXA: TStringField
       FieldName = 'CAIXA'
@@ -932,7 +913,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_rouparia: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -946,7 +926,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_roupariaDIARIA: TStringField
       FieldName = 'DIARIA'
@@ -1008,7 +987,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_coletas: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -1022,7 +1000,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_coletasDH_COLETA: TDateTimeField
       FieldName = 'DH_COLETA'
@@ -1079,7 +1056,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_diarias: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -1093,7 +1069,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_diariasCONTA: TStringField
       FieldName = 'CONTA'
@@ -1311,7 +1286,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_pedidos: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -1325,7 +1299,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_pedidosCOMANDA: TStringField
       FieldName = 'COMANDA'
@@ -1382,7 +1355,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object q_usuarios: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -1396,7 +1368,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object q_usuariosID: TStringField
       FieldName = 'ID'
@@ -1433,7 +1404,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object query_idc: TFDQuery
-    Active = True
     AfterPost = QueryApplyUpdates
     AfterCancel = QueryApplyUpdates
     AfterDelete = QueryApplyUpdates
@@ -1447,7 +1417,6 @@ object dm_firedac: Tdm_firedac
       FieldName = 'FICHA'
       Origin = 'FICHA'
       ProviderFlags = [pfInWhere, pfInKey]
-      ReadOnly = True
     end
     object query_idcID: TStringField
       FieldName = 'ID'
@@ -1462,7 +1431,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_empresa: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -1476,7 +1444,6 @@ object dm_firedac: Tdm_firedac
     object T_empresaFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_empresaEMPRESA: TStringField
       FieldName = 'EMPRESA'
@@ -1738,7 +1705,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_feriados: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -1752,7 +1718,6 @@ object dm_firedac: Tdm_firedac
     object T_feriadosFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_feriadosDT_EVENTO: TDateField
       FieldName = 'DT_EVENTO'
@@ -1780,7 +1745,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_apartamentos: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -1794,7 +1758,6 @@ object dm_firedac: Tdm_firedac
     object T_apartamentosFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_apartamentosAPTO: TStringField
       FieldName = 'APTO'
@@ -1893,7 +1856,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_fornecedores: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -1907,7 +1869,6 @@ object dm_firedac: Tdm_firedac
     object T_fornecedoresFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_fornecedoresID_FORNEC: TStringField
       FieldName = 'ID_FORNEC'
@@ -2001,7 +1962,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_grupos: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2015,7 +1975,6 @@ object dm_firedac: Tdm_firedac
     object T_gruposFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_gruposID_GRUPO: TStringField
       FieldName = 'ID_GRUPO'
@@ -2037,7 +1996,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_produtos: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2051,7 +2009,6 @@ object dm_firedac: Tdm_firedac
     object T_produtosFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_produtosID_GRUPO: TStringField
       FieldName = 'ID_GRUPO'
@@ -2117,7 +2074,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_estoque: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2131,7 +2087,6 @@ object dm_firedac: Tdm_firedac
     object T_estoqueFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_estoqueDH_LANCAMENTO: TDateTimeField
       FieldName = 'DH_LANCAMENTO'
@@ -2191,7 +2146,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_caixa: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2205,7 +2159,6 @@ object dm_firedac: Tdm_firedac
     object T_caixaFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_caixaCAIXA: TStringField
       FieldName = 'CAIXA'
@@ -2360,7 +2313,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_rouparia: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2374,7 +2326,6 @@ object dm_firedac: Tdm_firedac
     object T_roupariaFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_roupariaDIARIA: TStringField
       FieldName = 'DIARIA'
@@ -2437,7 +2388,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_coletas: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2451,7 +2401,6 @@ object dm_firedac: Tdm_firedac
     object T_coletasFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_coletasDH_COLETA: TDateTimeField
       FieldName = 'DH_COLETA'
@@ -2509,7 +2458,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_diarias: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2523,7 +2471,6 @@ object dm_firedac: Tdm_firedac
     object T_diariasFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_diariasCONTA: TStringField
       FieldName = 'CONTA'
@@ -2748,7 +2695,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_pedidos: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2766,7 +2712,6 @@ object dm_firedac: Tdm_firedac
     object T_pedidosFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_pedidosCOMANDA: TStringField
       FieldName = 'COMANDA'
@@ -2824,7 +2769,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_usuarios: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2838,7 +2782,6 @@ object dm_firedac: Tdm_firedac
     object T_usuariosFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_usuariosID: TStringField
       FieldName = 'ID'
@@ -2877,7 +2820,6 @@ object dm_firedac: Tdm_firedac
     end
   end
   object T_idc: TFDTable
-    Active = True
     AfterPost = TableApplyUpdates
     AfterCancel = TableApplyUpdates
     AfterDelete = TableApplyUpdates
@@ -2894,7 +2836,6 @@ object dm_firedac: Tdm_firedac
     object T_idcFICHA: TFDAutoIncField
       FieldName = 'FICHA'
       Origin = 'FICHA'
-      ReadOnly = True
     end
     object T_idcID: TStringField
       FieldName = 'ID'
@@ -2919,18 +2860,19 @@ object dm_firedac: Tdm_firedac
     Top = 304
   end
   object DriverLink_1: TFDPhysMySQLDriverLink
-    VendorLib = 'C:\Program Files\MySQL\MySQL Server 5.1\bin\libmysql.dll'
+    VendorLib = 'C:\Program Files\Ampps\mysql\lib\libmysql.dll'
     Left = 184
     Top = 16
   end
   object Connection_1: TFDConnection
+    ConnectionName = 'Connection_1'
     Params.Strings = (
       'Database=psi_hotel'
-      'User_Name=root'
+      'DriverID=MySQL'
+      'Password=mysql'
       'Server=localhost'
-      'DriverID=MySQL')
-    Connected = True
-    LoginPrompt = False
+      'User_Name=root'
+      'CharacterSet=utf8mb4')
     Left = 40
     Top = 16
   end
